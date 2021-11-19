@@ -39,7 +39,7 @@ def get_5_points(img):#返回人脸5点坐标
         single_points.append([shape.part(i).x, shape.part(i).y])
     return np.array(single_points) 
 
-def align_and_save(img_path, save_path, save_input_path, save_param_path, upsample_scale=2):
+def align_and_save(img_path, save_path, save_input_path, save_param_path, upsample_scale=2):#人脸组件
     out_size = (512, 512) 
     img = dlib.load_rgb_image(img_path)
     h,w,_ = img.shape
