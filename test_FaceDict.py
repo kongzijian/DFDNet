@@ -22,7 +22,7 @@ import face_alignment
 ###########################################################################
 ################# functions of crop and align face images #################
 ###########################################################################
-def get_5_points(img):
+def get_5_points(img):#返回人脸5点坐标
     dets = detector(img, 1)
     if len(dets) == 0:
         return None
