@@ -37,7 +37,7 @@ def get_5_points(img):
     single_points = []
     for i in range(5):
         single_points.append([shape.part(i).x, shape.part(i).y])
-    return np.array(single_points) 
+    return np.array(single_points) #返回的是五点的坐标
 
 def align_and_save(img_path, save_path, save_input_path, save_param_path, upsample_scale=2):
     out_size = (512, 512) 
